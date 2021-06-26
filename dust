@@ -1,0 +1,13 @@
+class dust
+{
+    constructor(x,y)
+    {
+        this.x=x;
+        this.y=y;
+        this.Width=20;
+        this.Height=20;
+        this.angle=0;
+
+        this.bottomleftBody=Bodies.circle(this.x, this.y, this.Width, this.Height,{isStatic:true})
+        Matter.Body.setAngle(this.dustBody, this.angle);
+    }
